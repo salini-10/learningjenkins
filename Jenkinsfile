@@ -1,6 +1,6 @@
 pipeline {
   agent any
-  environment{
+  environment {
     ENV_URL = "pipeline.google.com"
     SSH_CRED = credentials("SSH")
    }
@@ -24,7 +24,7 @@ pipeline {
               {
 
               echo "two"
-              sh 'env'
+
            }
          }
 
