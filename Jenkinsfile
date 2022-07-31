@@ -4,6 +4,10 @@ pipeline {
     ENV_URL = "pipeline.google.com"
     SSH_CRED = credentials("ssh")
    }
+   triggers {
+   pollSCM('*/2****')
+   }
+
    stages{
      stage('one')
       {
