@@ -5,7 +5,7 @@ pipeline {
     SSH_CRED = credentials("ssh")
    }
    triggers {
-   pollSCM('*/2****')
+   pollSCM('*/2 * * * *')
    }
 
    stages{
